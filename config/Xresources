@@ -1,0 +1,10 @@
+Xft.dpi: 192
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
+Xcursor.size: 48
+
+XTerm*faceName: DejaVu Sans Mono
+XTerm*faceSize: 11
