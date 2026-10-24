@@ -49,8 +49,7 @@ From a local text-console login:
     startx
 
 Optional system changes:
-
-    bash install.sh surface
+l
     bash install.sh tlp
 
 Diagnostics:
