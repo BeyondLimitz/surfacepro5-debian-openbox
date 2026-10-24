@@ -1,0 +1,5 @@
+# Session components are managed by surface-session.
+# Put optional personal startup commands here.
+#
+# Example:
+# feh --bg-fill "$HOME/Pictures/wallpaper.jpg" &
