@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+  <menu id="root-menu" label="Surface">
+    <item label="Applications">
+      <action name="Execute">
+        <command>rofi -show drun -dpi 192</command>
+      </action>
+    </item>
+    <item label="Terminal">
+      <action name="Execute">
+        <command>xterm</command>
+      </action>
+    </item>
+    <item label="Files">
+      <action name="Execute">
+        <command>pcmanfm</command>
+      </action>
+    </item>
+    <item label="On-screen keyboard">
+      <action name="Execute">
+        <command>onboard</command>
+      </action>
+    </item>
+    <separator/>
+    <item label="Appearance">
+      <action name="Execute">
+        <command>obconf</command>
+      </action>
+    </item>
+    <item label="Log out">
+      <action name="Exit"/>
+    </item>
+  </menu>
+</openbox_menu>
