@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ -r "$HOME/.Xresources" ]; then
+    xrdb -merge "$HOME/.Xresources"
+fi
+
+if [ -r "$HOME/.config/openbox/environment" ]; then
+    . "$HOME/.config/openbox/environment"
+fi
+
+exec dbus-run-session -- \
+    "$HOME/.local/libexec/surface-openbox/surface-session"
