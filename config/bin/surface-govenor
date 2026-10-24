@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+file=/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+
+if [[ ! -r "$file" ]]; then
+    printf 'CPU n/a\n'
+    exit 0
+fi
+
+read -r governor < "$file"
+
+case "$governor" in
+    powersave)   printf 'CPU powersave\n' ;;
+    performance) printf 'CPU performance\n' ;;
+    schedutil)   printf 'CPU schedutil\n' ;;
+    *)           printf 'CPU %s\n' "$governor" ;;
+esac
